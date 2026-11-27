@@ -1,0 +1,220 @@
+/* Base styles from the Nerfies template (https://github.com/nerfies/nerfies.github.io) */
+body {
+  font-family: 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.footer .icon-link {
+  font-size: 25px;
+  color: #000;
+}
+
+.link-block a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+}
+
+.publication-title {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+}
+
+.publication-authors {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+}
+
+.publication-authors a {
+  color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+/* ---------- CovHiS additions ---------- */
+
+.publication-venue {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #b5236f;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.corresponding-note {
+  font-size: 0.9rem;
+  color: #6b6b6b;
+  margin-top: 0.25rem;
+}
+
+/* Figures */
+.paper-figure {
+  margin: 0 auto 2.5rem;
+}
+
+.paper-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.paper-figure.is-narrow img {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.paper-figure figcaption {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #4a4a4a;
+  margin-top: 0.75rem;
+  text-align: left;
+}
+
+.paper-figure figcaption strong {
+  color: #363636;
+}
+
+/* Section spacing */
+.section h3.title {
+  margin-top: 2rem;
+}
+
+.lead-in {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Method stages */
+.stage {
+  border-left: 4px solid #d6338a;
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.stage.is-second {
+  border-left-color: #3273dc;
+}
+
+.stage-label {
+  font-family: 'Google Sans', 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #b5236f;
+  margin-bottom: 0.25rem;
+}
+
+.stage.is-second .stage-label {
+  color: #2a62bc;
+}
+
+.stage h3.title {
+  margin-top: 0 !important;
+}
+
+.equation {
+  background: #f7f7f8;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  margin: 0.75rem 0 1rem;
+  overflow-x: auto;
+}
+
+/* Tables */
+.table-container {
+  margin-bottom: 0.5rem;
+}
+
+.results-table {
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.results-table th,
+.results-table td {
+  text-align: center !important;
+  vertical-align: middle !important;
+  white-space: nowrap;
+}
+
+.results-table th:first-child,
+.results-table td:first-child {
+  text-align: left !important;
+}
+
+.results-table thead th {
+  font-weight: 600;
+}
+
+.results-table.wrap-head thead th {
+  white-space: normal;
+  min-width: 5.5rem;
+}
+
+.section > .container > .content.lead-in {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-table tr.is-ours td {
+  background: #fdf0f7;
+  font-weight: 600;
+}
+
+.results-table td.is-best {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #d6338a;
+  text-underline-offset: 3px;
+}
+
+.table-caption {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #4a4a4a;
+  margin-bottom: 2.5rem;
+}
+
+/* BibTeX */
+.bibtex-wrapper {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+/* Keyboard focus */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #3273dc;
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .has-text-justified {
+    text-align: left !important;
+  }
+  .publication-title {
+    font-size: 1.9rem !important;
+  }
+  .stage {
+    padding-left: 0.85rem;
+  }
+}
