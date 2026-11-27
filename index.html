@@ -164,23 +164,6 @@
             effective guidance strength.
           </figcaption>
         </figure>
-        <div class="content has-text-justified lead-in">
-          <p>
-            Classifier-free guidance adds &omega; times the conditional&ndash;unconditional residual
-            \(d_t = \hat{\epsilon}_c - \hat{\epsilon}_\varnothing\) at every denoising step. Existing
-            corrections reshape this residual through geometric projection, temporal refinement or
-            attention perturbation, but whatever survives the correction is still multiplied by &omega;.
-            The update keeps growing with the scale, so the failure is only pushed to a larger &omega;.
-          </p>
-          <p>
-            We see the damage as temporal. A large update applied once is something the sampler can
-            recover from. The same update applied coherently over many consecutive steps becomes a steady
-            force that drags the trajectory into saturation and off-manifold drift. Within a single step the
-            two cases look identical, so only the trajectory&rsquo;s recent history can tell them apart.
-            CovHiS uses that history to find and damp recurring residual directions, and it bounds the final
-            guidance update so that it no longer grows directly with &omega;.
-          </p>
-        </div>
       </div>
     </div>
   </div>
